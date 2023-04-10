@@ -17,11 +17,11 @@ BANK_DEPOSIT = [
         'end': 10000,
         'value': [
             {'start': 6,
-             'end': 12,
+             'end': 6,
              'value': 5
              },
             {'start': 12,
-             'end': 24,
+             'end': 12,
              'value': 6
              },
             {'start': 24,
@@ -35,11 +35,11 @@ BANK_DEPOSIT = [
         'end': 100000,
         'value': [
             {'start': 6,
-             'end': 12,
+             'end': 6,
              'value': 6
              },
             {'start': 12,
-             'end': 24,
+             'end': 12,
              'value': 7
              },
             {'start': 24,
@@ -53,11 +53,11 @@ BANK_DEPOSIT = [
         'end': 1000000,
         'value': [
             {'start': 6,
-             'end': 12,
+             'end': 6,
              'value': 7
              },
             {'start': 12,
-             'end': 24,
+             'end': 12,
              'value': 8
              },
             {'start': 24,
@@ -103,7 +103,8 @@ def get_deposit_sum(deposit_sum, months):
 
 
 if __name__ == '__main__':
-    months = 12
+    months = 26
     deposit_sum = 10000
     total = get_deposit_sum(deposit_sum, months)
-    print(f'Сумма депозита {deposit_sum} на {months} месяцев. Доход = {round(total,2)}')
+    if total > 0:
+        print(f'Сумма депозита {deposit_sum} на {months} месяцев. Доход = {round(total, 2)}')
