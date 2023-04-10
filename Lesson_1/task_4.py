@@ -103,7 +103,7 @@ def get_deposit_sum(deposit_sum, months):
 
 
 if __name__ == '__main__':
-    months = 25
+    months = 12
     deposit_sum = 10000
     total = get_deposit_sum(deposit_sum, months)
     print(f'Сумма депозита {deposit_sum} на {months} месяцев. Доход = {round(total,2)}')
